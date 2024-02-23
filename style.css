@@ -1,0 +1,38 @@
+/* CSS GOES HERE */
+
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font:inherit ;
+    vertical-align: baseline;
+}
+section {
+    padding: 60px 40px;
+}
+
+section:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.container {
+    width: 100%;
+    max-width: 960px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    gap: 10px;
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+}
