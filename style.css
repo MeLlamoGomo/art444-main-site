@@ -31,6 +31,8 @@ body {
     background-repeat: no-repeat;
     left: 0%;
     height: 78px;
+    position: relative;
+    z-index: 1;
 }
 
 .headline_text {
@@ -59,6 +61,40 @@ p {
     font-family: "aktiv-grotesk", sans-serif;
     font-weight: 400;
     font-style: normal;
+}
+
+.paragraph_box {
+    background-image: url(images/Paragraph_box.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 800px;
+    display: flex;
+    flex: 100%;
+    position: relative;
+    z-index: 0;
+    margin-top: -12px;
+    margin-bottom: auto;
+    justify-content: center;
+    
+    /*
+
+position: absolute;
+width: 700px;
+height: 191px;
+left: 406px;
+top: 922px;
+
+line-height: 23px;
+
+color: #000000; */
+}
+
+.paragraph_text {
+    display: flex;
+    padding: 20px;
+    width: 700px;
+    height: 191px;
+    
 }
 
 section:nth-child(even) {
