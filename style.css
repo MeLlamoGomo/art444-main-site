@@ -91,6 +91,7 @@ color: #000000; */
 
 .paragraph_text {
     display: flex;
+    flex-wrap: wrap;
     padding: 20px;
     width: 700px;
     height: 191px;
