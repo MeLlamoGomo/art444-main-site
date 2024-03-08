@@ -26,6 +26,41 @@ body {
     vertical-align: baseline;
 }
 
+.title {
+    background-image: url(images/tech_frame.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 90%;
+    
+    padding: 100px;
+    height: max-content;
+    text-align: center;
+}
+
+.title_text {
+    /* Guillermo’s Website */
+
+font-weight: 700;
+font-size: clamp(28px, 3vw, 42px);
+line-height: 58px;
+text-align: center;
+
+color: #000000;
+}
+
+.sub_text {
+    /* viverra vitae congue eu consequat ac */
+
+font-weight: 400;
+font-size: clamp(16px, 3vw, 30px);
+line-height: 41px;
+text-align: center;
+
+color: #000000;
+
+
+}
+
 .headline {
     background-image: url(images/headline_symbol.svg);
     background-repeat: no-repeat;
