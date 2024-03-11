@@ -30,33 +30,44 @@ body {
     background-image: url(images/tech_frame.svg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 90%;
-    
+    background-size: 95%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
     padding: 100px;
+    margin: auto;
     height: max-content;
-    text-align: center;
+    justify-content: center;
+    align-content: center;
+
 }
 
 .title_text {
     /* Guillermo’s Website */
-
-font-weight: 700;
-font-size: clamp(28px, 3vw, 42px);
-line-height: 58px;
-text-align: center;
+    margin-bottom: auto;
+    font-weight: 700;
+    font-size: clamp(28px, 3vw, 42px);
+    text-align: center;
+    display: flex;
+    
+    justify-content: center;
+    align-content: center;
 
 color: #000000;
 }
 
 .sub_text {
     /* viverra vitae congue eu consequat ac */
-
-font-weight: 400;
-font-size: clamp(16px, 3vw, 30px);
-line-height: 41px;
-text-align: center;
-
-color: #000000;
+    margin-top: auto;
+    font-weight: 400;
+    font-size: clamp(16px, 3vw, 30px);
+    line-height: 41px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    
+    color: #000000;
 
 
 }
@@ -90,6 +101,14 @@ color: #000000;
     color: #000000;
 
 
+}
+
+h1 {
+    margin-bottom: auto;
+}
+
+h2 {
+    margin-top: .5rem;
 }
 
 p {
@@ -143,7 +162,7 @@ section:nth-child(even) {
     width: 100%;
     /*max-width: 960px;*/
     /*text-align: center;*/
-    margin: 0 auto;
+    margin-top: 50px;
 }
 
 nav ul {
