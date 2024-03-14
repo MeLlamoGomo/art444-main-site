@@ -165,23 +165,66 @@ color: #000000; */
 
 .skill_contain {
     display: flex;
+    flex-wrap: wrap;
     position: relative;
     z-index: 0;
     margin-top: -12px;
     justify-content: center;
     align-self: center;
+}
+
+.skill_border {
+    display: flex;
+    position: relative;
+    width: 800px;
+    justify-content: center;
+    border-bottom-right-radius: 100px;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    border-bottom-left-radius: 16px;
+    background: #05f3d8;
     
+    &:before, &:after {
+        content: ' ';
+        position: absolute;
+        right: 0px;
+    }
+    &:before {
+      width: 30px;
+      height: 58px;
+      bottom: 40px;
+      background: #05f3d8;
+      right: 00px;
+      border-bottom-right-radius: 6px;
+    }
+    &:after {
+      width: 50px;
+      height: 10px;
+      bottom: -10px;
+      border-top: 43px solid #05f3d8;
+      border-right: 58px solid transparent;
+    }
+    &-content {
+      z-index: 2;
+      display: block;
+      position: relative;
+      padding: 20px 25px;
+    }
 }
 
 .skill_box {
     display: flex;
     position: relative;
-    width: 800px;
+    width: 790px;
     justify-content: center;
-    border-bottom-right-radius: 90px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-bottom-right-radius: 100px;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    border-bottom-left-radius: 16px;
     background: #e2fffc;
     
-
     &:before, &:after {
         content: ' ';
         position: absolute;
@@ -194,13 +237,14 @@ color: #000000; */
       bottom: 40px;
       background: #e2fffc;
       right: 00px;
+      border-bottom-right-radius: 6px;
     }
     &:after {
       width: 50px;
       height: 10px;
       bottom: -10px;
-      border-top: 40px solid #e2fffc;
-      border-right: 55px solid transparent;
+      border-top: 42px solid #e2fffc;
+      border-right: 56px solid transparent;
     }
     &-content {
       z-index: 2;
