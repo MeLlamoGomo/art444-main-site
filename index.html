@@ -4,10 +4,12 @@
   <meta charset="UTF-8">
   <title>Guillermo Morales</title>
   <link rel="stylesheet" href="style.css">
-  <!-- <link rel="stylesheet" href="responsive.css"> -->
+  <link rel="stylesheet" href="responsive.css">
   <link rel="stylesheet" href="https://use.typekit.net/rjr7opq.css">
 </head>
 <body>
+
+  <div class="mobil-menu"></div>
 
 <!-- Main Navigation --> 
 <header id="main_nav">
@@ -48,9 +50,13 @@
         </div>
         <!-- <div><img src="images/headline_symbol.svg" class="tech_symbol" alt="symbol"/></div> -->
       </div>
-      <div class="paragraph_box">
-        <div class="paragraph_text">
-          <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+      <div class="skill_contain">
+        <div class="paragraph_border">
+          <div class="paragraph_box">
+            <div class="paragraph_text">
+              <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -176,9 +182,9 @@
 <!-- FAQ Section -->  
 <section id="faqs">
   <div class="container">
-    <div class="headline_faq">
+    <div class="headline">
       <div class="headline_text">
-        <h2>Frequent Asked Questions</h2>
+        <h2>FAQ</h2>
       </div>
       <!-- <div><img src="http://placehold.it/423x76" class="tech_symbol" alt="symbol"/></div> -->
     </div>
@@ -225,34 +231,32 @@
 
 <!-- Contact Section -->  
 <section id="contact">
-  <div class="contact_container">
-    <div class="contact_headline">
-      <h2>Contact Me</h2>
-    </div>
-    <div class="top_left">
-      <div><img src="images/top_left_symbol.svg" /></div>
-    </div>
-    <div class="bottom_right">
-      <div><img src="images/bottom_right_symbol.svg" /></div>
-    </div>
-    <div class="field_input">
-      <form>
-        <div class="six columns">
-          <label for="exampleRecipientInput">Name</label>
-          <input class="u-full-width" type="text">
-        </div>
-        <div class="six columns">
-          <label for="exampleEmailInput">Email</label>
-          <input class="u-full-width" type="email">
-        </div>
-        <div>
-          <label for="exampleMessage">Message</label>
-          <textarea class="u-full-width"></textarea>
-        </div>
-        <div class="right">
-          <input class="button-primary" type="submit" value="Submit">
-        </div>
-      </form>
+  <div class="contact_content">
+    <div class="contact_container">
+      <div class="contact_headline">
+        <h2>Contact Me</h2>
+      </div>
+      <div class="field_input">
+        <form>
+          <div class="six_columns">
+            <div class="input">
+              <input type="text" placeholder="Name">
+            </div>
+          </div>
+          <div class="six_columns">
+            <div class="input">
+              <input type="text" placeholder="Email">
+            </div>
+          </div>
+          <div>
+            <label for="exampleMessage">Message</label>
+            <textarea class="u-full-width"></textarea>
+          </div>
+          <div class="submit">
+            <input class="button-primary" type="submit" value="Submit">
+          </div>
+        </form>
+      </div>
     </div>
   </div>
 </section>

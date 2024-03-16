@@ -1,6 +1,10 @@
 /* TABLET VIEW */
 @media only screen and (max-width:768px) {
 
+    .mobil-menu {
+        display: block;
+    }
+
 }
 
 /* MOBILE VIEW */
