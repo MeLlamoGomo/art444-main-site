@@ -225,29 +225,6 @@ p {
       padding: 20px 25px;
     } 
 
-/*    background-image: url(images/Paragraph_box.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 800px;
-    display: flex;
-    flex: 100%;
-    position: relative;
-    z-index: 0;
-    margin-top: -12px;
-    margin-bottom: auto;
-    justify-content: center; */
-    
-    /*
-
-position: absolute;
-width: 700px;
-height: 191px;
-left: 406px;
-top: 922px;
-
-line-height: 23px;
-
-color: #000000; */
 }
 
 .paragraph_text {
@@ -273,16 +250,43 @@ color: #000000; */
     align-self: center;
 }
 
-.skill_border {
+.button {
     display: flex;
+    flex-direction: row;
+}
+
+.faq_contain {
+    display: flex;
+    flex-direction: column;
+}
+
+.faq {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    margin-left: 100px;
+    margin-right: 100px;
+    justify-content: center;
+    align-self: center;
+    flex-direction: column;
+}
+
+.faq_border {
+    display: flex;
+    flex: 100%;
+    flex-wrap: wrap;
     position: relative;
-    width: 800px;
+    z-index: 0;
+    align-self: center;
+    max-width: 800px;
+    width: 100%;
+    min-height: 120px;
     justify-content: center;
     border-bottom-right-radius: 100px;
     border-top-left-radius: 16px;
     border-top-right-radius: 16px;
     border-bottom-left-radius: 16px;
-    background: #05f3d8;
+    background: #000;
     
     &:before, &:after {
         content: ' ';
@@ -293,37 +297,39 @@ color: #000000; */
       width: 30px;
       height: 58px;
       bottom: 40px;
-      background: #05f3d8;
+      background: #000;
       right: 00px;
       border-bottom-right-radius: 6px;
     }
     &:after {
-      width: 50px;
+      width: 48px;
       height: 10px;
       bottom: -10px;
-      border-top: 43px solid #05f3d8;
+      border-top: 43px solid #000;
       border-right: 58px solid transparent;
     }
     &-content {
       z-index: 2;
-      display: flex;
       position: relative;
       padding: 20px 25px;
     }
 }
 
-.skill_box {
+.faq_box {
     display: flex;
+    flex: 100%;
     position: relative;
-    width: 790px;
-    justify-content: center;
+    justify-content: left;
+    max-width: 790px;
     margin-top: 5px;
     margin-bottom: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
     border-bottom-right-radius: 100px;
     border-top-left-radius: 14px;
     border-top-right-radius: 14px;
     border-bottom-left-radius: 14px;
-    background: #e2fffc;
+    background: #05f3d8;
     
     &:before, &:after {
         content: ' ';
@@ -335,7 +341,7 @@ color: #000000; */
       width: 30px;
       height: 60px;
       bottom: 40px;
-      background: #e2fffc;
+      background: #05f3d8;
       right: 00px;
       border-bottom-right-radius: 6px;
     }
@@ -343,7 +349,7 @@ color: #000000; */
       width: 50px;
       height: 10px;
       bottom: -10px;
-      border-top: 42px solid #e2fffc;
+      border-top: 42px solid #05f3d8;
       border-right: 56px solid transparent;
     }
     &-content {
@@ -351,23 +357,55 @@ color: #000000; */
       display: block;
       position: relative;
       padding: 20px 25px;
-    }
+    } 
 }
 
-
-/*.skill_box {
-    background-image: url(images/skill_frame.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 800px;
+.rhombus {
     display: flex;
-    flex: 100%;
-    position: relative;
-    z-index: 0;
-    margin-top: -12px;
-    margin-bottom: auto;
+    flex-wrap: wrap;
     justify-content: center;
-} */
+    align-content: center;
+    margin-left: 10px;
+}
+
+.question {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    max-width: 700px;
+    z-index: 1;
+    align-content: center;
+}
+
+.dropdown {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 100%;
+    z-index: -1;
+    max-width: 650px;
+    min-height: 240px;
+    justify-content: center;
+    align-content: center;
+    border-color: #05f3d8;
+    border-width: 5px;
+    border-style: solid;
+    background-color: #e2fffc;
+    margin-top: -12px;
+    margin-left: 90px;
+    margin-right: 90px;
+    border-bottom-left-radius: 14px;
+    border-bottom-right-radius: 14px;
+}
+
+.dropdown_text {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 5px;
+    padding: 20px;
+    max-width: 630px;
+    justify-content: flex-end;
+    align-content: center;
+}
 
 .contact_content {
     display: flex;
