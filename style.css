@@ -107,17 +107,23 @@ ul {
     padding-right: 0;
 }
 
+.title_contain {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
 .title {
     background-image: url(images/tech_frame.svg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 95%;
+    width: 1150px;
+    padding-top: 100px;
+    padding-bottom: 100px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    padding: 100px;
-    margin: auto;
-    height: max-content;
     justify-content: center;
     align-content: center;
 
@@ -125,21 +131,20 @@ ul {
 
 .title_text {
     /* Guillermo’s Website */
-    margin-bottom: auto;
     font-weight: 700;
-    font-size: clamp(28px, 3vw, 42px);
+    font-size: clamp(32px, 3vw, 42px);
     text-align: center;
     display: flex;
-    
     justify-content: center;
     align-content: center;
-
-color: #000000;
+    color: #000000;
+    margin-left: 70px;
+    margin-right: 70px;
 }
 
 .sub_text {
     /* viverra vitae congue eu consequat ac */
-    margin-top: auto;
+    
     font-weight: 400;
     font-size: clamp(16px, 3vw, 30px);
     line-height: 41px;
@@ -185,7 +190,7 @@ color: #000000;
     font-family: "good-times", sans-serif;
     font-style: normal;
     font-weight: 700;
-    font-size: 28px;
+    font-size: clamp(16px, 3vw, 30px);
     line-height: 41px;
 
     color: #000000;
