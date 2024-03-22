@@ -146,7 +146,7 @@ ul {
     /* viverra vitae congue eu consequat ac */
     
     font-weight: 400;
-    font-size: clamp(16px, 3vw, 30px);
+    font-size: clamp(20px, 2vw, 30px);
     line-height: 41px;
     text-align: center;
     display: flex;
@@ -190,7 +190,7 @@ ul {
     font-family: "good-times", sans-serif;
     font-style: normal;
     font-weight: 700;
-    font-size: clamp(16px, 3vw, 30px);
+    font-size: clamp(20px, 2vw, 30px);
     line-height: 41px;
 
     color: #000000;
@@ -492,7 +492,7 @@ span {
 }
 
 .button {
-    display: flex;
+    display: none;
     flex-direction: row;
 }
 
