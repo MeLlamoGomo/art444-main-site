@@ -100,6 +100,11 @@ body {
     color: #000;
 }
 
+.main_nav a:hover {
+    text-decoration: underline;
+    color: #05f3d8;
+}
+
 ul {
     margin-left: 0;
     margin-right: 0;
