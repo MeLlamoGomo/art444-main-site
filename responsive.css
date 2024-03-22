@@ -1,7 +1,15 @@
 /* TABLET VIEW */
 @media only screen and (max-width:768px) {
 
+    .main_nav {
+        display: none;
+    }
+
     .mobil-menu {
+        display: block;
+    }
+
+    .mobil-menu-popout {
         display: block;
     }
 
