@@ -42,18 +42,27 @@ body {
 }
 
 .mobil-menu-popout {
-    display: none;
     position: fixed;
     top: 0;
-    left: 0;
+    
     background-color: #05f3d8;
     z-index: 998;
     padding: 80px 40px;
-    border-right: 5px solid #f22dae;
-    border-bottom: 5px solid #f22dae;
+    border-right: 5px solid #000;
+    border-bottom: 5px solid #000;
     border-bottom-right-radius: 16px;
     width: 100px;
+    left: -190px;
     transition: all 300ms;
+}
+
+.open {
+    left: 0;
+}
+
+.close {
+    background-image: url(images/4115230_cancel_close_delete_icon.svg);
+
 }
 
 .mobil-menu-popout ul {
@@ -71,9 +80,31 @@ body {
     color: #000;
 }
 
+.main_nav {
+    background-image: url(images/nav_bar.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 760px;
+    height: 66px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .main_nav a {
     text-decoration: none;
     color: #000;
+}
+
+ul {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
 }
 
 .title {
@@ -360,7 +391,7 @@ p {
     max-width: 800px;
     width: 100%;
     min-height: 120px;
-    margin-top: 30px;
+    margin-bottom: 30px;
     justify-content: center;
     border-bottom-right-radius: 100px;
     border-top-left-radius: 16px;

@@ -9,25 +9,27 @@
 </head>
 <body>
 
-  <div class="mobil-menu"></div>
+  <div onclick="myMenu()" class="mobil-menu" id="menuButton"></div>
 
 <!-- Main Navigation --> 
 <header id="main_nav">
   <div class="main_nav">
-    <nav>
-      <ul>
-        <li><a class="smoothscroll" href="#header">Home</a></li>
-        <li><a class="smoothscroll" href="#about">About</a></li>
-        <li><a class="smoothscroll" href="#skills">Skills</a></li>
-        <li><a class="smoothscroll" href="#gallery">Gallery</a></li>
-        <li><a class="smoothscroll" href="#faqs">FAQs</a></li>
-        <li><a class="smoothscroll" href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+    <div class="navigate">
+      <nav>
+        <ul>
+          <li><a class="smoothscroll" href="#header">Home</a></li>
+          <li><a class="smoothscroll" href="#about">About</a></li>
+          <li><a class="smoothscroll" href="#skills">Skills</a></li>
+          <li><a class="smoothscroll" href="#gallery">Gallery</a></li>
+          <li><a class="smoothscroll" href="#faqs">FAQs</a></li>
+          <li><a class="smoothscroll" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </div>
 </header>
 
-<div class="mobil-menu-popout">
+<div id="mymenu" class="mobil-menu-popout">
   <ul>
     <li><a class="smoothscroll" href="#header">Home</a></li>
     <li><a class="smoothscroll" href="#about">About</a></li>
@@ -37,6 +39,7 @@
     <li><a class="smoothscroll" href="#contact">Contact</a></li>
   </ul>
 </div>
+
 
 <!-- Main Header --> 
   <section id="header" class="header">
@@ -355,6 +358,15 @@
     </div>
   </div>
 </footer>
+
+<script>
+  function myMenu() {
+    document.getElementById('mymenu').classList.toggle('open');
+    document.getElementById('menuButton').classList.toggle('close');
+
+  }
+
+</script>
 
 <script src="script.js"></script>
 </body>
