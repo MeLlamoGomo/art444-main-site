@@ -58,6 +58,12 @@
         min-width: 492px;
     }
 
+    .question {
+        position: relative;
+        z-index: 4;
+        padding: 5px;
+    }
+
     .rhombus {
         display: flex;
         flex-wrap: wrap;
@@ -65,8 +71,6 @@
         justify-content: center;
         align-content: center;
     }
-
-
 
     .copywrite {
         display: flex;
@@ -123,6 +127,10 @@
 
 @media only screen and (max-width: 560px) {
 
+    .paragraph_text {
+        min-width: 252px;
+    }
+
     .skill_organize {
         min-width: 272px;
     }
@@ -134,6 +142,20 @@
     .organize {
         max-width: 370px;
         min-width: 0;
+    }
+
+    .faq {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .faq_border {
+        min-width: 0;
+    }
+
+    .dropdown {
+        margin-left: 58px;
+        margin-right: 58px;
     }
 
     
@@ -183,6 +205,15 @@
         justify-content: center;
         align-content: center;
     } */
+
+    .faq_border {
+        min-width: 300px;
+    }
+
+    .dropdown {
+        margin-left: 58px;
+        margin-right: 58px;
+    }
 
     .copywrite {
         display: flex;

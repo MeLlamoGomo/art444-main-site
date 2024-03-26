@@ -588,6 +588,7 @@ span {
       bottom: -10px;
       border-top: 42px solid #05f3d8;
       border-right: 56px solid transparent;
+      z-index: 1;
     }
     &-content {
       z-index: 2;
