@@ -13,9 +13,184 @@
         display: block;
     }
 
+    p {
+        font-family: "aktiv-grotesk", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 14px;
+        position: relative;
+        z-index: 2;
+    }
+
+    
+
+    .organize {
+        flex-direction: row;
+        min-width: 492px;
+    }
+
+    .skill_organize {
+        flex-direction: column;
+        margin: 10px;
+    }
+
+    .prog_organize {
+        flex-direction: column;
+        margin: 10px;
+        position: relative;
+        z-index: 2;
+    }
+
+    .progress_wheel {
+        height: auto;
+        width: 160px;
+    }
+
+    .img_organize {
+        margin: 30px;
+    }
+
+    .image {
+        height: 300px;
+    }
+
+    .faq_border {
+        min-width: 492px;
+    }
+
+    .rhombus {
+        display: flex;
+        flex-wrap: wrap;
+        height: 38px;
+        justify-content: center;
+        align-content: center;
+    }
+
+
+
+    .copywrite {
+        display: flex;
+        justify-content: center;
+        border-top: 2px solid #f22dae;
+        margin-left: 50px;
+        margin-right: 50px;
+        color: #05f3d8;
+    }
+    
+
+}
+
+@media only screen and (max-width: 630px) {
+
+    h1 {
+        font-size: 44px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    h3 {
+        position: relative;
+        z-index: 4;
+    }
+
+    nav ul {
+        list-style: none;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .top {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        gap: 45px;
+    }
+    
+    .bottom {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        gap: 30px;
+    }
+
+}
+
+@media only screen and (max-width: 560px) {
+
+    .skill_organize {
+        min-width: 272px;
+    }
+
+    .skill_descrip {
+        margin-bottom: 10px;
+    }
+
+    .organize {
+        max-width: 370px;
+        min-width: 0;
+    }
+
+    
+
+}
+
+@media only screen and (max-width: 445px) {
+
+    h3 {
+        font-size: 17px;
+    }
+
+    .img_organize {
+        margin: 20px;
+    }
+
+    .image {
+        height: 230px;
+        position: relative;
+        z-index: 2;
+    }
+
+    span {
+        margin-top: 10px;
+        font-size: 14px;
+    }
+
+    .copywrite {
+        display: flex;
+        justify-content: center;
+        border-top: 2px solid #f22dae;
+        margin-left: 25px;
+        margin-right: 25px;
+        min-width: 320px;
+        color: #05f3d8;
+    }
+
 }
 
 /* MOBILE VIEW */
 @media only screen and (max-width: 390px) {
+
+    /*.footer ul {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    } */
+
+    .copywrite {
+        display: flex;
+        justify-content: center;
+        border-top: 2px solid #f22dae;
+        margin-left: 25px;
+        margin-right: 25px;
+        color: #05f3d8;
+    }
   
 }

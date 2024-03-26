@@ -80,7 +80,6 @@
 <!-- Skills Section -->  
 <section id="skills">
   <div class="container">
-    <div class="row2">
       <div class="headline">
         <div class="headline_text">
           <h2>Skills</h2>
@@ -94,7 +93,7 @@
               <div class="skill_organize">
                 <div class="skill_descrip">
                   <div class="skill_sub">
-                    <div class="rhombus"><img width="54" height="44" src="images/Rectangle 5.svg" /></div>
+                    <div class="rhombus_organize"><img width="54" height="44" src="images/Rectangle 5.svg" class="rhombus" /></div>
                     <h3>Skill</h3>
                   </div>
                   <div class="list">
@@ -108,7 +107,7 @@
                 </div>
                 <div class="skill_descrip">
                   <div class="skill_sub">
-                    <div class="rhombus"><img width="54" height="44" src="images/Rectangle 5.svg" /></div>
+                    <div class="rhombus_organize"><img width="54" height="44" src="images/Rectangle 5.svg" class="rhombus" /></div>
                     <h3>Skill</h3>
                   </div>
                   <div class="list">
@@ -139,7 +138,6 @@
           </div>
         </div>
       </div>
-    </div>
   </div>
 </section>
 
@@ -244,7 +242,7 @@
       <div class="faq">
         <div class="faq_border">
           <div class="faq_box">
-            <div class="rhombus"><img width="54" height="44" src="images/Rectangle 5.svg" /></div>
+            <div class="rhombus_organize"><img width="54" height="44" src="images/Rectangle 5.svg" class="rhombus" /></div>
             <div class="question">
               <h3>When will you be graduating from SDSU?</h3>
             </div>
@@ -259,7 +257,7 @@
       <div class="faq">
         <div class="faq_border">
           <div class="faq_box">
-            <div class="rhombus"><img width="54" height="44" src="images/Rectangle 5.svg" /></div>  
+            <div class="rhombus_organize"><img width="54" height="44" src="images/Rectangle 5.svg" class="rhombus" /></div>  
             <div class="question">
               <h3>What do you have planned for after graduation?</h3>
             </div>
@@ -274,7 +272,7 @@
       <div class="faq">
         <div class="faq_border">
           <div class="faq_box">
-            <div class="rhombus"><img width="54" height="44" src="images/Rectangle 5.svg" /></div>
+            <div class="rhombus_organize"><img width="54" height="44" src="images/Rectangle 5.svg" class="rhombus" /></div>
             <div class="question">
               <h3>What was your favorite class you took at SDSU?</h3>
             </div>
@@ -289,7 +287,7 @@
       <div class="faq">
         <div class="faq_border">
           <div class="faq_box">
-            <div class="rhombus"><img width="54" height="44" src="images/Rectangle 5.svg" /></div>
+            <div class="rhombus_organize"><img width="54" height="44" src="images/Rectangle 5.svg" class="rhombus" /></div>
             <div class="question">
               <h3>What work are you most proud producing at SDSU?</h3>
             </div>
@@ -324,9 +322,10 @@
               <input type="text" placeholder="Email">
             </div>
           </div>
-          <div>
-            <label for="exampleMessage">Message</label>
-            <textarea class="u-full-width"></textarea>
+          <div class="six_columns">
+            <div class="input">
+              <textarea class="u-full-width" placeholder="Message"></textarea>
+            </div>
           </div>
           <div class="submit">
             <input class="button-primary" type="submit" value="Submit">
@@ -344,12 +343,16 @@
     <div class="footer">
       <nav>
         <ul>
-          <li><a class="smoothscroll" href="#header">Home</a></li>
-          <li><a class="smoothscroll" href="#about">About</a></li>
-          <li><a class="smoothscroll" href="#skills">Skills</a></li>
-          <li><a class="smoothscroll" href="#gallery">Gallery</a></li>
-          <li><a class="smoothscroll" href="#faqs">FAQs</a></li>
-          <li><a class="smoothscroll" href="#contact">Contact</a></li>
+          <div class="top">
+            <li><a class="smoothscroll" href="#header">Home</a></li>
+            <li><a class="smoothscroll" href="#about">About</a></li>
+            <li><a class="smoothscroll" href="#skills">Skills</a></li>
+          </div>
+          <div class="bottom">
+            <li><a class="smoothscroll" href="#gallery">Gallery</a></li>
+            <li><a class="smoothscroll" href="#faqs">FAQs</a></li>
+            <li><a class="smoothscroll" href="#contact">Contact</a></li>
+          </div>
         </ul>
       </nav>
       <div class="copywrite">
