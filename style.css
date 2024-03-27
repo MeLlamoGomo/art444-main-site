@@ -59,7 +59,7 @@ body {
     padding: 218px 80px;
     left: -264px;
     border-bottom-right-radius: 100px;
-    background: #05f3d8;
+    background: #000;
     transition: all 300ms;
     
     &:before, &:after {
@@ -71,7 +71,7 @@ body {
       width: 30px;
       height: 58px;
       bottom: 40px;
-      background: #05f3d8;
+      background: #000;
       right: 00px;
       border-bottom-right-radius: 6px;
     }
@@ -79,7 +79,7 @@ body {
       width: 48px;
       height: 10px;
       bottom: -10px;
-      border-top: 43px solid #05f3d8;
+      border-top: 43px solid #000;
       border-right: 58px solid transparent;
     }
     &-content {
