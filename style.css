@@ -27,14 +27,10 @@ body {
 }
 
 .mobil-menu {
-    width: 36px;
-    height: 36px;
-    background-color: #e5e5e5;
+    width: 74px;
+    height: 74px;
     position: fixed;
-    top: 40px;
-    left: 40px;
-    border-radius: 12%;
-    background-image: url(images/menu_FILL0_wght400_GRAD0_opsz24.svg);
+    background-image: url(images/Hamburger_Button.svg);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     z-index: 999;
@@ -42,7 +38,7 @@ body {
 }
 
 .mobil-menu-popout {
-    position: fixed;
+    /* position: fixed;
     top: 0;
     
     background-color: #05f3d8;
@@ -52,16 +48,97 @@ body {
     border-bottom: 5px solid #000;
     border-bottom-right-radius: 16px;
     width: 100px;
-    left: -190px;
+    left: -190px; */
+    display: none;
+    position: fixed;
+    z-index: 997;
+    justify-content: center;
+    align-self: center;
+    top: 0;
+    width: 105px;
+    padding: 218px 80px;
+    left: -264px;
+    border-bottom-right-radius: 100px;
+    background: #05f3d8;
     transition: all 300ms;
+    
+    &:before, &:after {
+        content: ' ';
+        position: absolute;
+        right: 0px;
+    }
+    &:before {
+      width: 30px;
+      height: 58px;
+      bottom: 40px;
+      background: #05f3d8;
+      right: 00px;
+      border-bottom-right-radius: 6px;
+    }
+    &:after {
+      width: 48px;
+      height: 10px;
+      bottom: -10px;
+      border-top: 43px solid #05f3d8;
+      border-right: 58px solid transparent;
+    }
+    &-content {
+      z-index: 2;
+      position: relative;
+      padding: 20px 25px;
+    }
+
+}
+
+.mobil-menu-interior {
+    display: flex;
+    flex: 100%;
+    flex-wrap: wrap;
+    position: fixed;
+    z-index: 998;
+    justify-content: center;
+    align-self: center;
+    top: 0;
+    width: 100px;
+    padding: 80px 40px;
+    justify-content: center;
+    border-bottom-right-radius: 100px;
+    background: #e2fffc;
+    transition: all 300ms;
+    
+    &:before, &:after {
+        content: ' ';
+        position: absolute;
+        right: 0px;
+    }
+    &:before {
+      width: 30px;
+      height: 58px;
+      bottom: 40px;
+      background: #e2fffc;
+      right: 00px;
+      border-bottom-right-radius: 6px;
+    }
+    &:after {
+      width: 48px;
+      height: 10px;
+      bottom: -10px;
+      border-top: 43px solid #e2fffc;
+      border-right: 58px solid transparent;
+    }
+    &-content {
+      z-index: 2;
+      position: relative;
+      padding: 20px 25px;
+    }
 }
 
 .open {
-    left: 0;
+    left: -80px;
 }
 
 .close {
-    background-image: url(images/4115230_cancel_close_delete_icon.svg);
+    background-image: url(images/Close_Button.svg);
 
 }
 
@@ -103,6 +180,11 @@ body {
 .main_nav a:hover {
     text-decoration: underline;
     color: #05f3d8;
+}
+
+.mobil-menu-interior a:hover {
+    text-decoration: underline;
+    color: #f22dae;
 }
 
 ul {
@@ -181,7 +263,6 @@ ul {
     height: 60px;
     left: 246px;
     padding-left: 240px;
-    
 
     font-family: "good-times", sans-serif;
     font-style: normal;
@@ -708,6 +789,17 @@ input[type=text] {
     font-family: "good-times", sans-serif;
     font-style: normal;
     vertical-align: baseline;
+}
+
+.u-full-width {
+    align-content: center;
+    background-color: #e2fffc;
+    padding-top: 14px;
+    padding-bottom: 10px;
+    border-radius: 6px;
+    justify-content: center;
+    width: 250px;
+    height: 40px;
 }
 
 .submit {

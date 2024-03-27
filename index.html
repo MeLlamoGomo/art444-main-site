@@ -29,14 +29,16 @@
 
 <!-- Popout Menu -->
 <div id="mymenu" class="mobil-menu-popout">
-  <ul>
-    <li><a class="smoothscroll" href="#header">Home</a></li>
-    <li><a class="smoothscroll" href="#about">About</a></li>
-    <li><a class="smoothscroll" href="#skills">Skills</a></li>
-    <li><a class="smoothscroll" href="#gallery">Gallery</a></li>
-    <li><a class="smoothscroll" href="#faqs">FAQs</a></li>
-    <li><a class="smoothscroll" href="#contact">Contact</a></li>
-  </ul>
+  <div class="mobil-menu-interior">
+    <ul>
+      <li><a onclick="closeMenu()" class="popout_button" href="#header">Home</a></li>
+      <li><a onclick="closeMenu()" class="popout_button" href="#about">About</a></li>
+      <li><a onclick="closeMenu()" class="popout_button" href="#skills">Skills</a></li>
+      <li><a onclick="closeMenu()" class="popout_button" href="#gallery">Gallery</a></li>
+      <li><a onclick="closeMenu()" class="popout_button" href="#faqs">FAQs</a></li>
+      <li><a onclick="closeMenu()" class="popout_button" href="#contact">Contact</a></li>
+    </ul>
+  </div>
 </div>
 
 
@@ -368,8 +370,16 @@
     document.getElementById('menuButton').classList.toggle('close');
 
   }
+  
+  function closeMenu() {
+    document.getElementById('mymenu').classList.remove('open');
+    document.getElementById('menuButton').classList.remove('close');
+  }
 
 </script>
+
+
+
 
 <script src="script.js"></script>
 </body>

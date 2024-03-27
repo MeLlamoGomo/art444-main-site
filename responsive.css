@@ -22,6 +22,10 @@
         z-index: 2;
     }
 
+    .title {
+        margin-top: 50px;
+    }
+
     
 
     .organize {
@@ -99,6 +103,10 @@
         z-index: 4;
     }
 
+    .headline {
+        left: -100px;
+    }
+
     nav ul {
         list-style: none;
         display: flex;
@@ -126,6 +134,10 @@
 }
 
 @media only screen and (max-width: 560px) {
+
+    .headline {
+        left: -126px;
+    }
 
     .paragraph_text {
         min-width: 252px;
@@ -164,8 +176,23 @@
 
 @media only screen and (max-width: 445px) {
 
+    h2 {
+        font-size: 24px;
+    }
+
     h3 {
         font-size: 17px;
+    }
+
+    .headline {
+        left: -30%;
+        width: 436px;
+        background-size: 350px;
+        height: 65px;
+    }
+
+    .headline_text {
+        padding-left: 194px;
     }
 
     .img_organize {
@@ -182,6 +209,45 @@
         margin-top: 10px;
         font-size: 14px;
     }
+
+    .contact_container {
+        margin-bottom: 20px;
+    }
+
+    .contact_headline {
+        margin-top: 134px;
+        margin-bottom: 12px;
+    }
+
+    .field_input {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-left: 80px;
+        margin-right: 80px;
+        font-size: 16px;
+    }
+
+    .six_columns {
+        margin-bottom: 20px;
+    }
+
+    .input {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    input[type=text] {
+        padding-top: 9px;
+        padding-bottom: 6px;
+        width: 250px;
+    }
+
+    ::placeholder {
+        font-size: 16px;
+    }
+
 
     .copywrite {
         display: flex;
