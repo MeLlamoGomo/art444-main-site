@@ -2,6 +2,7 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>Guillermo Morales</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="responsive.css">
@@ -10,6 +11,9 @@
 <body>
 
   <div onclick="myMenu()" class="mobil-menu" id="menuButton"></div>
+  <div onclick="darkMode()" class="darkButton">
+    <button type="button">dark</button>
+  </div>
 
 <!-- Main Navigation --> 
 <header id="main_nav">
@@ -374,6 +378,10 @@
   function closeMenu() {
     document.getElementById('mymenu').classList.remove('open');
     document.getElementById('menuButton').classList.remove('close');
+  }
+
+  function darkMode() {
+    document.getElementsByTagName('body')[0].classList.toggle('body_darkMode');
   }
 
 </script>

@@ -30,6 +30,19 @@ body {
     vertical-align: baseline;
 }
 
+.body_darkMode {
+    background-color: #102041;
+    color: #05f3d8;
+}
+
+.darkButton {
+    z-index: 999;
+    display: flex;
+    position: fixed;
+    right: 0%;
+    top: 70px;
+}
+
 .mobil-menu {
     width: 74px;
     height: 74px;
