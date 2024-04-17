@@ -32,7 +32,6 @@ body {
 
 .body_darkMode {
     background-color: #102041;
-    color: #05f3d8;
 }
 
 .darkButton {
@@ -40,7 +39,7 @@ body {
     display: flex;
     position: fixed;
     right: 0%;
-    top: 70px;
+    /*top: 70px;*/
 }
 
 .mobil-menu {
@@ -246,6 +245,10 @@ ul {
     margin-right: 70px;
 }
 
+.title_dark {
+    color: #05f3d8;
+}
+
 .sub_text {
     /* viverra vitae congue eu consequat ac */
     
@@ -258,8 +261,10 @@ ul {
     align-content: center;
     
     color: #000000;
+}
 
-
+.sub_dark {
+    color: #05f3d8;
 }
 
 .headline {
@@ -288,6 +293,10 @@ ul {
     line-height: 41px;
 
     color: #000000;
+}
+
+.darkHeadline {
+    color: #05f3d8;
 }
 
 h1 {
@@ -392,6 +401,50 @@ p {
 
 }
 
+.pBox_dark {
+    display: flex;
+    flex: 100%;
+    position: relative;
+    justify-content: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-bottom-right-radius: 100px;
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+    border-bottom-left-radius: 14px;
+    background: #234d64;
+    
+    &:before, &:after {
+        content: ' ';
+        position: absolute;
+        right: 0px;
+        z-index: 1;
+    }
+    &:before {
+      width: 30px;
+      height: 60px;
+      bottom: 40px;
+      background: #234d64;
+      right: 00px;
+      border-bottom-right-radius: 6px;
+    }
+    &:after {
+      width: 50px;
+      height: 10px;
+      bottom: -10px;
+      border-top: 42px solid #234d64;
+      border-right: 56px solid transparent;
+    }
+    &-content {
+      z-index: 2;
+      display: block;
+      position: relative;
+      padding: 20px 25px;
+    } 
+}
+
 .paragraph_text {
     display: flex;
     flex-wrap: wrap;
@@ -400,6 +453,10 @@ p {
     justify-content: flex-end;
     align-content: center;
     
+}
+
+.text_dark {
+    color: #05f3d8;
 }
 
 .skill_contain {
@@ -441,6 +498,10 @@ p {
     align-content: center;
 }
 
+.skill_dark {
+    color: #05f3d8;
+}
+
 .list {
     display: flex;
     flex-direction: row;
@@ -457,6 +518,10 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+.list_dark {
+    color: #05f3d8;
 }
 
 .prog_organize {
@@ -516,6 +581,51 @@ p {
       height: 10px;
       bottom: -10px;
       border-top: 43px solid #000;
+      border-right: 58px solid transparent;
+    }
+    &-content {
+      z-index: 2;
+      position: relative;
+      padding: 20px 25px;
+    }
+}
+
+.imgBorder_dark {
+    display: flex;
+    flex: 100%;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 0;
+    align-self: center;
+    max-width: 800px;
+    width: 100%;
+    min-height: 120px;
+    margin-bottom: 30px;
+    justify-content: center;
+    border-bottom-right-radius: 100px;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    border-bottom-left-radius: 16px;
+    background: #05f3d8;
+    
+    &:before, &:after {
+        content: ' ';
+        position: absolute;
+        right: 0px;
+    }
+    &:before {
+      width: 30px;
+      height: 58px;
+      bottom: 40px;
+      background: #05f3d8;
+      right: 00px;
+      border-bottom-right-radius: 6px;
+    }
+    &:after {
+      width: 48px;
+      height: 10px;
+      bottom: -10px;
+      border-top: 43px solid #05f3d8;
       border-right: 58px solid transparent;
     }
     &-content {
@@ -650,6 +760,50 @@ span {
     }
 }
 
+.faqBorder_dark {
+    display: flex;
+    flex: 100%;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 0;
+    align-self: center;
+    max-width: 800px;
+    width: 100%;
+    min-height: 120px;
+    justify-content: center;
+    border-bottom-right-radius: 100px;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    border-bottom-left-radius: 16px;
+    background: #05f3d8;
+    
+    &:before, &:after {
+        content: ' ';
+        position: absolute;
+        right: 0px;
+    }
+    &:before {
+      width: 30px;
+      height: 58px;
+      bottom: 40px;
+      background: #05f3d8;
+      right: 00px;
+      border-bottom-right-radius: 6px;
+    }
+    &:after {
+      width: 48px;
+      height: 10px;
+      bottom: -10px;
+      border-top: 43px solid #05f3d8;
+      border-right: 58px solid transparent;
+    }
+    &-content {
+      z-index: 2;
+      position: relative;
+      padding: 20px 25px;
+    }
+}
+
 .faq_box {
     display: flex;
     flex: 100%;
@@ -734,6 +888,10 @@ span {
     border-bottom-right-radius: 14px;
 }
 
+.dropdown_dark {
+    background-color: #234d64;
+}
+
 .dropdown_text {
     display: flex;
     flex-wrap: wrap;
@@ -742,6 +900,10 @@ span {
     max-width: 630px;
     justify-content: flex-end;
     align-content: center;
+}
+
+.dropText_dark {
+    color: #05f3d8;
 }
 
 .contact_content {
