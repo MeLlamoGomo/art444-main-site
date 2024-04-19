@@ -28,6 +28,7 @@ body {
     font-weight: 500;
     font-style: normal;
     vertical-align: baseline;
+    transition: all 400ms;
 }
 
 .body_darkMode {
@@ -39,7 +40,8 @@ body {
     display: flex;
     position: fixed;
     right: 0%;
-    /*top: 70px;*/
+    top: 70px;
+    background-image: url(images/Dark_mode.svg);
 }
 
 .mobil-menu {
@@ -140,6 +142,49 @@ body {
       height: 10px;
       bottom: -10px;
       border-top: 43px solid #e2fffc;
+      border-right: 58px solid transparent;
+    }
+    &-content {
+      z-index: 2;
+      position: relative;
+      padding: 20px 25px;
+    }
+}
+
+.mobil-interior-dark {
+    display: flex;
+    flex: 100%;
+    flex-wrap: wrap;
+    position: fixed;
+    z-index: 998;
+    justify-content: center;
+    align-self: center;
+    top: 0;
+    width: 100px;
+    padding: 80px 40px;
+    justify-content: center;
+    border-bottom-right-radius: 100px;
+    background: #05f3d8;
+    transition: all 300ms;
+    
+    &:before, &:after {
+        content: ' ';
+        position: absolute;
+        right: 0px;
+    }
+    &:before {
+      width: 30px;
+      height: 58px;
+      bottom: 40px;
+      background: #05f3d8;
+      right: 00px;
+      border-bottom-right-radius: 6px;
+    }
+    &:after {
+      width: 48px;
+      height: 10px;
+      bottom: -10px;
+      border-top: 43px solid #05f3d8;
       border-right: 58px solid transparent;
     }
     &-content {
@@ -935,7 +980,7 @@ span {
     font-weight: 700;
     display: flex;
     margin-top: 80px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 
 .field_input {
@@ -948,41 +993,41 @@ span {
 .six_columns {
     display: flex;
     flex-direction: column;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
 }
 
 input[type=text] {
-    align-content: center;
+    
     background-color: #e2fffc;
-    padding-top: 14px;
-    padding-bottom: 10px;
+    padding-top: 9px;
+    padding-bottom: 9px;
     border-radius: 6px;
     justify-content: center;
     font-family: "good-times", sans-serif;
 
 }
 
-::placeholder {
+h4 {
+    display: flex;
     color: #f22dae;
     font-size: 20px;
     font-family: "good-times", sans-serif;
     font-style: normal;
-    vertical-align: baseline;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    font-weight: 200;
 }
 
 .u-full-width {
-    align-content: center;
     background-color: #e2fffc;
-    padding-top: 14px;
     padding-bottom: 10px;
     border-radius: 6px;
     justify-content: center;
-    width: 250px;
-    height: 40px;
+    width: 285px;
 }
 
 .submit {
-    margin-top: 30px;
+    margin-top: 20px;
     display: flex;
     justify-content: center;
 }

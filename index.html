@@ -320,17 +320,20 @@
         <form>
           <div class="six_columns">
             <div class="input">
-              <input type="text" placeholder="Name">
+              <h4>Name</h4>
+              <input type="text">
             </div>
           </div>
           <div class="six_columns">
             <div class="input">
-              <input type="text" placeholder="Email">
+              <h4>Email</h4>
+              <input type="text">
             </div>
           </div>
           <div class="six_columns">
             <div class="input">
-              <textarea class="u-full-width" placeholder="Message"></textarea>
+              <h4>Message</h4>
+              <textarea class="u-full-width" rows="3" ></textarea>
             </div>
           </div>
           <div class="submit">
@@ -385,6 +388,7 @@
     /*const cardDark = document.querySelectorAll('.card')*/
 
     document.getElementsByTagName('body')[0].classList.toggle('body_darkMode');
+    document.getElementsByClassName('mobil-menu-interior')[0].classList.toggle('mobil-interior-dark');
     document.getElementsByClassName('title_text')[0].classList.toggle('title_dark');
     document.getElementsByClassName('sub_text')[0].classList.toggle('sub_dark');
     document.getElementsByClassName('headline_text')[0].classList.toggle('darkHeadline');
@@ -411,7 +415,7 @@
     document.getElementsByClassName('dropdown_text')[2].classList.toggle('dropText_dark');
     document.getElementsByClassName('dropdown_text')[3].classList.toggle('dropText_dark');
     /*document.getElementsByClassName('img_border')[0].classList.toggle('imgBorder_dark');*/
-
+  
 
   }
 

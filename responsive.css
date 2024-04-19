@@ -219,21 +219,29 @@
     }
 
     .contact_headline {
-        margin-top: 134px;
-        margin-bottom: 12px;
+        margin-top: 107px;
+        margin-bottom: 0;
     }
 
     .field_input {
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
         margin-left: 80px;
         margin-right: 80px;
         font-size: 16px;
     }
 
     .six_columns {
-        margin-bottom: 20px;
+        margin-bottom: 14px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    h4 {
+        font-size: 16px;
+        position: relative;
+        width: 258px;
+
     }
 
     .input {
@@ -243,15 +251,14 @@
     }
 
     input[type=text] {
-        padding-top: 9px;
+        padding-top: 6px;
         padding-bottom: 6px;
         width: 250px;
     }
 
-    ::placeholder {
-        font-size: 16px;
+    .u-full-width {
+        width: 252px;
     }
-
 
     .copywrite {
         display: flex;
