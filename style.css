@@ -38,10 +38,17 @@ body {
 .darkButton {
     z-index: 999;
     display: flex;
-    position: fixed;
-    right: 0%;
-    top: 70px;
-    background-image: url(images/Dark_mode.svg);
+    position: absolute ;
+    width: 92px;
+    height: 32px;
+    right: 40px;
+    top: 110px;
+    background-image: url(images/DmodeButton.svg);
+    background-repeat: no-repeat;
+}
+
+.lightButton {
+    background-image: url(images/LmodeButton.svg);
 }
 
 .mobil-menu {
@@ -228,7 +235,7 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     align-content: center;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
     margin-left: auto;
     margin-right: auto;
 }

@@ -11,9 +11,7 @@
 <body>
 
   <div onclick="myMenu()" class="mobil-menu" id="menuButton"></div>
-  <div onclick="darkMode()" class="darkButton">
-    <button type="button">dark</button>
-  </div>
+  <div onclick="darkMode()" class="darkButton"></div>
 
 <!-- Main Navigation --> 
 <header id="main_nav">
@@ -99,7 +97,7 @@
               <div class="skill_organize">
                 <div class="skill_descrip">
                   <div class="skill_sub">
-                    <div class="rhombus_organize"><img width="54" height="44" src="images/Rectangle 5.svg" class="rhombus" /></div>
+                    <div class="rhombus_organize"><img width="54" height="44" src="images/Rectangle_5.svg" class="rhombus" /></div>
                     <h3>Skill</h3>
                   </div>
                   <div class="list">
@@ -113,7 +111,7 @@
                 </div>
                 <div class="skill_descrip">
                   <div class="skill_sub">
-                    <div class="rhombus_organize"><img width="54" height="44" src="images/Rectangle 5.svg" class="rhombus" /></div>
+                    <div class="rhombus_organize"><img width="54" height="44" src="images/Rectangle_5.svg" class="rhombus" /></div>
                     <h3>Skill</h3>
                   </div>
                   <div class="list">
@@ -248,7 +246,7 @@
       <div class="faq">
         <div class="faq_border">
           <div class="faq_box">
-            <div class="rhombus_organize"><img width="54" height="44" src="images/Rectangle 5.svg" class="rhombus" /></div>
+            <div class="rhombus_organize"><img width="54" height="44" src="images/Rectangle_5.svg" class="rhombus" /></div>
             <div class="question">
               <h3>When will you be graduating from SDSU?</h3>
             </div>
@@ -263,7 +261,7 @@
       <div class="faq">
         <div class="faq_border">
           <div class="faq_box">
-            <div class="rhombus_organize"><img width="54" height="44" src="images/Rectangle 5.svg" class="rhombus" /></div>  
+            <div class="rhombus_organize"><img width="54" height="44" src="images/Rectangle_5.svg" class="rhombus" /></div>  
             <div class="question">
               <h3>What do you have planned for after graduation?</h3>
             </div>
@@ -278,7 +276,7 @@
       <div class="faq">
         <div class="faq_border">
           <div class="faq_box">
-            <div class="rhombus_organize"><img width="54" height="44" src="images/Rectangle 5.svg" class="rhombus" /></div>
+            <div class="rhombus_organize"><img width="54" height="44" src="images/Rectangle_5.svg" class="rhombus" /></div>
             <div class="question">
               <h3>What was your favorite class you took at SDSU?</h3>
             </div>
@@ -293,7 +291,7 @@
       <div class="faq">
         <div class="faq_border">
           <div class="faq_box">
-            <div class="rhombus_organize"><img width="54" height="44" src="images/Rectangle 5.svg" class="rhombus" /></div>
+            <div class="rhombus_organize"><img width="54" height="44" src="images/Rectangle_5.svg" class="rhombus" /></div>
             <div class="question">
               <h3>What work are you most proud producing at SDSU?</h3>
             </div>
@@ -370,59 +368,6 @@
     </div>
   </div>
 </footer>
-
-<script>
-  function myMenu() {
-    document.getElementById('mymenu').classList.toggle('open');
-    document.getElementById('menuButton').classList.toggle('close');
-
-  }
-  
-  function closeMenu() {
-    document.getElementById('mymenu').classList.remove('open');
-    document.getElementById('menuButton').classList.remove('close');
-  }
-
-  function darkMode() {
-
-    /*const cardDark = document.querySelectorAll('.card')*/
-
-    document.getElementsByTagName('body')[0].classList.toggle('body_darkMode');
-    document.getElementsByClassName('mobil-menu-interior')[0].classList.toggle('mobil-interior-dark');
-    document.getElementsByClassName('title_text')[0].classList.toggle('title_dark');
-    document.getElementsByClassName('sub_text')[0].classList.toggle('sub_dark');
-    document.getElementsByClassName('headline_text')[0].classList.toggle('darkHeadline');
-    document.getElementsByClassName('headline_text')[1].classList.toggle('darkHeadline');
-    document.getElementsByClassName('headline_text')[2].classList.toggle('darkHeadline');
-    document.getElementsByClassName('headline_text')[3].classList.toggle('darkHeadline');
-    document.getElementsByClassName('paragraph_box')[0].classList.toggle('pBox_dark');
-    document.getElementsByClassName('paragraph_box')[1].classList.toggle('pBox_dark');
-    document.getElementsByClassName('paragraph_text')[0].classList.toggle('text_dark');
-    document.getElementsByClassName('skill_sub')[0].classList.toggle('skill_dark');
-    document.getElementsByClassName('skill_sub')[1].classList.toggle('skill_dark');
-    document.getElementsByClassName('skill_list')[0].classList.toggle('list_dark');
-    document.getElementsByClassName('skill_list')[1].classList.toggle('list_dark');
-    document.getElementsByClassName('faq_border')[0].classList.toggle('faqBorder_dark');
-    document.getElementsByClassName('faq_border')[1].classList.toggle('faqBorder_dark');
-    document.getElementsByClassName('faq_border')[2].classList.toggle('faqBorder_dark');
-    document.getElementsByClassName('faq_border')[3].classList.toggle('faqBorder_dark');
-    document.getElementsByClassName('dropdown')[0].classList.toggle('dropdown_dark');
-    document.getElementsByClassName('dropdown')[1].classList.toggle('dropdown_dark');
-    document.getElementsByClassName('dropdown')[2].classList.toggle('dropdown_dark');
-    document.getElementsByClassName('dropdown')[3].classList.toggle('dropdown_dark');
-    document.getElementsByClassName('dropdown_text')[0].classList.toggle('dropText_dark');
-    document.getElementsByClassName('dropdown_text')[1].classList.toggle('dropText_dark');
-    document.getElementsByClassName('dropdown_text')[2].classList.toggle('dropText_dark');
-    document.getElementsByClassName('dropdown_text')[3].classList.toggle('dropText_dark');
-    /*document.getElementsByClassName('img_border')[0].classList.toggle('imgBorder_dark');*/
-  
-
-  }
-
-</script>
-
-
-
 
 <script src="script.js"></script>
 </body>
