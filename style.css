@@ -634,28 +634,6 @@ p {
 
   }
   
-  @media only screen and (max-width:500px) {
-      
-    .coverflow__image {
-      -webkit-user-select: none;
-      -moz-user-select: none;
-      -ms-user-select: none;
-      user-select: none;
-      width: 350px;
-      height: 350px;
-      -webkit-transition: all 350ms cubic-bezier(0.215, 0.61, 0.355, 1);
-      transition: all 350ms cubic-bezier(0.215, 0.61, 0.355, 1);
-    }
-    
-    .coverflow__image[data-coverflow-index] {
-      position: absolute;
-      left: 57%;
-      -webkit-transform-origin: 50% 50%;
-      transform-origin: 50% 50%;
-    }
-    
-  }
-  
   .coverflow[data-coverflow-position="1"] .coverflow__image[data-coverflow-index="1"] {
     z-index: 10;
     -webkit-transform: translateX(-200px);
@@ -1363,7 +1341,7 @@ p {
     position: absolute;
     top: 50%;
     padding: 1.5rem 2rem;
-    color: rgba(255, 255, 255, 0.5);
+    color: rgba(242, 45, 174, 0.5);
     font-size: 3rem;
     line-height: 3rem;
     background: transparent;
@@ -1538,7 +1516,8 @@ p {
 .img_organize {
     display: flex;
     flex-direction: column;
-    margin: 40px;
+    margin: 20px;
+    margin-top: 40px;
 }
 
 .image {
