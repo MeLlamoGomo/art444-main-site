@@ -209,6 +209,17 @@
       transform-origin: 50% 50%;
     }
 
+    .img_organize {
+        margin: 10px;
+        margin-bottom: -90px;
+        margin-top: 40px;
+    }
+
+    .prev-arrow, .next-arrow {
+        padding: 1rem 1.5rem;
+        font-size: 3rem;
+    }
+
 }
 
 @media only screen and (max-width: 445px) {
@@ -232,14 +243,15 @@
         padding-left: 194px;
     }
 
-    .img_organize {
-        margin: 20px;
-    }
-
     .image {
         height: 230px;
         position: relative;
         z-index: 2;
+    }
+
+    .prev-arrow, .next-arrow {
+        padding: 0.5rem 1rem;
+        font-size: 2rem;
     }
 
     span {
