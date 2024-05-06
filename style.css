@@ -579,8 +579,9 @@ p {
 .prog_organize {
     display:flex;
     flex-direction: row;
-    margin: 30px;
+    margin: 40px;
     margin-top: 0px;
+    justify-content: space-around;
 }
 
 .progress {
@@ -588,6 +589,11 @@ p {
     flex-wrap: wrap;
     margin-left: 10px;
     margin-right: 10px;
+}
+
+.progress_wheel {
+  width: 110px;
+  height: auto;
 }
 
 .frame {

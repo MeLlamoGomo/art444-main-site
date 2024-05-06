@@ -56,11 +56,13 @@
         margin: 10px;
         position: relative;
         z-index: 2;
+        justify-content: space-evenly;
     }
 
     .progress_wheel {
         height: auto;
-        width: 160px;
+        width: 100px;
+
     }
 
     .img_organize {
@@ -171,6 +173,10 @@
     .organize {
         max-width: 370px;
         min-width: 0;
+    }
+
+    .progress {
+        margin-top: 10px;
     }
 
     .faq {
