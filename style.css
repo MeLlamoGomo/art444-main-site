@@ -356,7 +356,7 @@ h1 {
 }
 
 h2 {
-    margin-top: .5rem;
+    margin-top: 1rem;
 }
 
 p {
@@ -592,7 +592,7 @@ p {
 }
 
 .progress_wheel {
-  width: 110px;
+  width: 70px;
   height: auto;
 }
 
@@ -1731,7 +1731,7 @@ span {
     flex: 100%;
     z-index: -2;
     max-width: 650px;
-    min-height: 240px;
+    min-height: 159px;
     justify-content: center;
     align-content: center;
     border-color: #05f3d8;

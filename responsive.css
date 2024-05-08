@@ -1,5 +1,13 @@
 /* TABLET VIEW */
 
+@media only screen and (max-width:848px) {
+
+    .skill_sub {
+        font-size: 15px;
+    }
+
+}
+
 @media only screen and (max-width:838px) {
     
     .darkButton {
@@ -61,7 +69,7 @@
 
     .progress_wheel {
         height: auto;
-        width: 100px;
+        width: 70px;
 
     }
 
