@@ -591,6 +591,10 @@ p {
     margin-right: 10px;
 }
 
+.mobile_organize {
+  display: none;
+}
+
 .progress_wheel {
   width: 70px;
   height: auto;
