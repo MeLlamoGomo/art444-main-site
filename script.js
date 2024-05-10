@@ -84,7 +84,7 @@ function myMenu() {
     checkPosition();
   })();
 
-var a = document.getElementsByTagName("a");
+var a = document.getElementsByTagName("picture");
 var cfImg = document.getElementsByClassName("coverflow__image")
 
 var scaleI = 0;
